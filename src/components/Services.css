@@ -1,0 +1,40 @@
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.service-card img {
+  width: 100%; /* Ensures the image spans the width of the card */
+  height: 150px; /* Sets a fixed height for the images */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  border-radius: 8px 8px 0 0;
+}
+
+.service-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
